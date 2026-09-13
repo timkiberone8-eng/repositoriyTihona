@@ -36,3 +36,6 @@ try:
 
 except ValueError:
     print("введите правильный тип данных")
+
+finally:
+    print("завершено")

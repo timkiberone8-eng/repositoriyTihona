@@ -4,17 +4,13 @@ result=0
 x= input("Введите операцию (сложение, вычитание, умножение, деление): ").lower().strip()
 if x=="сложение":
     result=a+b
-    print(result)
-
-if x=="вычитание":
+elif x=="вычитание":
     result=a-b
-    print(result)
-
-if x=="умножение":
+elif x=="умножение":
     result=a*b
-    print(result)
-
-
-if x=="деление":
+elif x=="деление":
     result=a/b
-    print(result)
+else:
+    result="Неизвестная операция"
+
+print(result)

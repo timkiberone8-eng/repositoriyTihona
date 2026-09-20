@@ -45,13 +45,8 @@ def main():
             print(result)
 
 
-        # if __name__ == "__main__":
-        #     main()
-    # except ZeroDivisionError:
-    #     print("нельзя делить на ноль")
-
-
-
+    except ZeroDivisionError:
+        print("нельзя делить на ноль")
 
 
     except ValueError:
@@ -63,3 +58,7 @@ def main():
 
     finally:
         print("завершено")
+
+
+if __name__ == "__main__":
+    main()

@@ -45,8 +45,6 @@ def main():
             print(result)
 
 
-        # if __name__ == "__main__":
-        #     main()
     # except ZeroDivisionError:
     #     print("нельзя делить на ноль")
 
@@ -63,3 +61,7 @@ def main():
 
     finally:
         print("завершено")
+
+
+if __name__ == "__main__":
+    main()

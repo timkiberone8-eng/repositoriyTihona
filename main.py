@@ -45,11 +45,8 @@ def main():
             print(result)
 
 
-    # except ZeroDivisionError:
-    #     print("нельзя делить на ноль")
-
-
-
+    except ZeroDivisionError:
+        print("нельзя делить на ноль")
 
 
     except ValueError:

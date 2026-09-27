@@ -2,14 +2,14 @@ import csv
 FILENAME= "task.csv"
 
 def load_task(filename):
-   """ "читатет задач из файла.нет файла-начинаем с пустго списка"""
-   tasks=[]
-   with open(filename,"r",encoding="utf-8") as file:
+    """ "читатет задач из файла.нет файла-начинаем с пустго списка"""
+    tasks=[]
+    with open(filename,"r",encoding="utf-8") as file:
       reader = csv.reader(file)
       for row in reader:
          tasks.append(row[0])
 
-   return tasks
+    return tasks
 
 def save_tasks(filename,tasks):
    """перезаписывает файл текущим списком задач"""
@@ -54,6 +54,6 @@ def main():
       else:
          print("неверный выбор попробуйе ввести 1,2 или 3")
 
-if __name__=="__main__":
-   main()
+if __name__== "__main__":
+    main()
    

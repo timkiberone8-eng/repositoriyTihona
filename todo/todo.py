@@ -4,10 +4,13 @@ FILENAME= "task.csv"
 def load_task(filename):
     """ "читатет задач из файла.нет файла-начинаем с пустго списка"""
     tasks=[]
-    with open(filename,"r",encoding="utf-8") as file:
-      reader = csv.reader(file)
-      for row in reader:
-         tasks.append(row[0])
+    try:
+        with open(filename,"r",encoding="utf-8") as file:
+          reader = csv.reader(file)
+          for row in reader:
+             tasks.append(row[0])
+    except FileNotFoundError:
+        pass
 
     return tasks
 

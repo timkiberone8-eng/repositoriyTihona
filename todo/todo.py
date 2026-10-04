@@ -48,7 +48,7 @@ def main():
 
       elif choice =="2":
             task=input("введите новую заадчу")
-            add_task(tasks.task)
+            add_task(tasks, task)
 
       elif choice=="3":
         save_tasks(FILENAME,tasks)

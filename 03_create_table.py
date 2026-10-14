@@ -1,3 +1,5 @@
+import psycopg2
+
 # 2) подключаемся к новой БД
 conn = psycopg2.connect(dbname="sales_data", user="postgres",
                         password="postgres", host="127.0.0.1", port="5432")
@@ -12,4 +14,7 @@ CREATE TABLE IF NOT EXISTS sales (
     sales_date DATE
 )
 """)
+conn.commit()
 print("таблица создана")
+
+cur.close(); conn.close()

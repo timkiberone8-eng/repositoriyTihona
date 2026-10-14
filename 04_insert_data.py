@@ -1,4 +1,11 @@
+import psycopg2
 from datetime import date
+
+conn = psycopg2.connect(dbname="sales_data", user="postgres",
+                        password="postgres", host="127.0.0.1", port="5432")
+cur = conn.cursor()
+
+cur.execute("DELETE FROM sales")
 
 sales_data = [
     ("Laptop",     10, 700, date(2024, 1, 10)),

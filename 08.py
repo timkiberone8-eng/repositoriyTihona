@@ -13,7 +13,6 @@ GROUP BY product_name
 ORDER BY total_revenue DESC
 """)
 revenue_data=cursor.fetchall()
-daily_sales_data = cursor.fetchall()
 cursor.close()
 connection.close()
 products=[row[0] for row in revenue_data]

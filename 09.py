@@ -20,7 +20,7 @@ quantities = [row[1]for row in daily_sales_data]
 
 plt.figure(figsize=(10,6))
 plt.plot(dates,quantities,color='blue',marker="o")
-plt.title("количсетво проданных продуктов по дате")
+plt.title("количество проданных продуктов по дате")
 plt.xlabel("дата")
 plt.ylabel("количество")
 plt.xticks(rotation=45)

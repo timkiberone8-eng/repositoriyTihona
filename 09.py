@@ -7,10 +7,10 @@ connection = psycopg2.connect(dbname="sales_data", user="postgres",
 cursor = connection.cursor()
 
 cursor.execute("""
-SELECT sales_date, SUM(quantity)AS total_quantity
+SELECT sale_date, SUM(quantity)AS total_quantity
 FROM sales
-GROUP BY sales_date
-ORDER BY sales_date
+GROUP BY sale_date
+ORDER BY sale_date
 """)
 daily_sales_data = cursor.fetchall()
 cursor.close()

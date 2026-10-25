@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS sales (
     product_name VARCHAR(100),
     quantity INT,
     price DECIMAL(10,2),
-    sales_date DATE
+    sale_date DATE
 )
 """)
 print("таблица создана")
@@ -36,7 +36,7 @@ sales_data = [
 ]
 
 cur.executemany(
-    "INSERT INTO sales (product_name, quantity, price, sales_date) VALUES (%s,%s,%s,%s)",
+    "INSERT INTO sales (product_name, quantity, price, sale_date) VALUES (%s,%s,%s,%s)",
     sales_data
 )
 conn.commit()

@@ -16,7 +16,7 @@ sales_data = [
 ]
 
 cur.executemany(
-    "INSERT INTO sales (product_name, quantity, price, sales_date) VALUES (%s,%s,%s,%s)",
+    "INSERT INTO sales (product_name, quantity, price, sale_date) VALUES (%s,%s,%s,%s)",
     sales_data
 )
 conn.commit()

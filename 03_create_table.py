@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS sales (
     product_name VARCHAR(100),
     quantity INT,
     price DECIMAL(10,2),
-    sales_date DATE
+    sale_date DATE
 )
 """)
 conn.commit()
